@@ -1,0 +1,37 @@
+{
+  "name": "python-learning-app",
+  "version": "1.0.0",
+  "description": "Современное приложение для изучения Python и алгоритмов",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@monaco-editor/react": "^4.6.0",
+    "@next-auth/prisma-adapter": "^1.0.7",
+    "@prisma/client": "5.22.0",
+    "bcryptjs": "^2.4.3",
+    "clsx": "^2.0.0",
+    "framer-motion": "^10.16.16",
+    "lucide-react": "^0.294.0",
+    "next": "^14.0.4",
+    "next-auth": "^4.24.5",
+    "nodemailer": "^6.9.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/node": "20.19.25",
+    "@types/nodemailer": "^6.4.14",
+    "@types/react": "18.3.27",
+    "@types/react-dom": "^18.3.7",
+    "autoprefixer": "^10.4.22",
+    "postcss": "^8.5.6",
+    "prisma": "5.22.0",
+    "tailwindcss": "^3.4.18",
+    "typescript": "5.9.3"
+  }
+}
