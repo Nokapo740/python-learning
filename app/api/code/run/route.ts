@@ -23,11 +23,11 @@ export async function POST(request: NextRequest) {
       let output = ''
       
       // Извлекаем все print() вызовы
-      const printMatches = Array.from(code.matchAll(/print\(([^)]+)\)/g))
+      const printMatches: RegExpMatchArray[] = Array.from(code.matchAll(/print\(([^)]+)\)/g))
       
       if (printMatches.length > 0) {
         for (const match of printMatches) {
-          let content = (match[1] as string).trim()
+          let content = match[1].trim()
           
           try {
             // Убираем кавычки для строк
