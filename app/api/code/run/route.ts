@@ -27,7 +27,7 @@ export async function POST(request: NextRequest) {
       
       if (printMatches.length > 0) {
         for (const match of printMatches) {
-          let content = match[1].trim()
+          let content = (match[1] as string).trim()
           
           try {
             // Убираем кавычки для строк
